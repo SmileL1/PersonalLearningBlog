@@ -1,0 +1,34 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\KX366EL\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add --dev vitepress
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Riverbed\Steelhead Mobile\;C:\Program Files\1E\Client\Extensibility\NomadBranch;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Users\KX366EL\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\nodejs\;C:\Users\KX366EL\AppData\Local\Microsoft\WindowsApps;C:\Users\KX366EL\.dotnet\tools;C:\Users\KX366EL\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Azure Data Studio\bin;C:\Users\KX366EL\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\KX366EL\AppData\Local\Programs\Git\cmd;C:\Users\KX366EL\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.16.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: read ECONNRESET
+      at TLSWrap.onStreamRead (node:internal/stream_base_commons:217:20)
+
+npm manifest: 
+  {
+    "name": "PersonalLearningBlog",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@github.com:SmileL1/PersonalLearningBlog.git",
+    "author": "赫 李 <He.H.Li@gdscn.ey.com>",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
