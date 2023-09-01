@@ -1,7 +1,7 @@
 export default {
-  base:'/PersonalLearningBlog/',
-  title: 'Test',
-  description: '基于vite为基础搭建的风格脚手架,提供多种模板以便于更高效的解决业务需求！',
+  base: '/PersonalLearningBlog/',
+  title: '千变万化',
+  description: '！',
   lang: 'zh-CN',
   head: [['link', { rel: 'icon', type: 'image/svg+xml', href: 'logo.jpeg' }]],
   themeConfig: {
@@ -66,7 +66,7 @@ export default {
     ],
     footer: {
       message: 'MIT Licensed',
-      copyright: 'Copyright © 2019-present 吴先森出品'
+      copyright: 'Copyright © 2023-present DDDDDDuck出品'
     }
   }
 
