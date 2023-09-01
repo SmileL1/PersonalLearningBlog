@@ -24,7 +24,7 @@ export default {
         text: '入门',
         items: [
           {
-            text: '简介',
+            text: '简介111',
             link: '/foo/one'
           },
           {
