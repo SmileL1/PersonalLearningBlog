@@ -9,8 +9,12 @@
     "vitepress": "^1.0.0-rc.10"
   },
   "scripts": {
-    "docs:dev":"vitepress dev docs",
+    "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs"
+  },
+  "dependencies": {
+    "vite-plugin-vitepress-auto-sidebar": "^1.6.0",
+    "vitepress-auto-nav-sidebar": "^0.0.5"
   }
 }

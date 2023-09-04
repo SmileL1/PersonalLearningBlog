@@ -3,15 +3,15 @@ layout: home
 
 hero:
   name: DDDDDDuck
-  text: 朕的江山
+  text: 我是你爸，千变万化！
   tagline: 
   image:
-    src: /avatar.jpg
+    src: /image/avatar.jpg
     alt: 网站的 logo 图片
   actions:
     - theme: brand
       text: 快速开始
-      link: /foo/one
+      link: /1.前端知识/test
     - theme: alt
       text: 在 github 上查看
       link: https://github.com/vuejs/vitepress
