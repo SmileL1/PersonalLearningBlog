@@ -1,14 +1,14 @@
 import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
 import AutoNavPlugin from 'vitepress-auto-nav-sidebar'
+import { titlePlugin } from './config/markdownPlugin'
 
-
-const { nav, sidebar } = AutoNavPlugin({
+const { nav } = AutoNavPlugin({
   ignoreFolders: ["node_modules", "assets", "public", ".vitepress", "code", ".obsidian", "utils"], // 需要排除的一些目录
   ignoreFiles: ['index.md'], // 需要排除的一些文件
   dirPrefix: '',
   filePrefix: '',
   showNavIcon:false,
-  isCollapsible:true,
+  isCollapsible:false,
   showSideIcon:true,
   collapsed: true,
   singleLayerNav:true
@@ -45,6 +45,16 @@ export default {
       noExternal: ['oh-vue-icons'],
     },
   },
+  markdown: {
+    lineNumbers: true,
+
+    // https://github.com/shikijs/shiki/blob/main/docs/themes.md#all-themes
+    theme: 'one-dark-pro',
+
+    config: (md) => {
+      md.block.ruler.before('paragraph', 'myplugin', titlePlugin)
+    },
+  },
   themeConfig: {
     repo: 'wushijiang13/vue3-vite-cli',
     repoLabel: '测试',
@@ -53,12 +63,7 @@ export default {
     editLinks: true,
     editLinkText: '欢迎帮助我们改善页面!',
     lastUpdated: '最近更新时间',
-    // nav: [
-    //   { text: '前端', link: '/1.前端知识/导读' },
-    //   { text: '其他', link: '/其他/导读' },
-    // ],
     nav,
-    sidebar,
     footer: {
       message: 'MIT Licensed',
       copyright: 'Copyright © 2023-present DDDDDDuck出品'
