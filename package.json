@@ -6,7 +6,14 @@
   "author": "赫 李 <He.H.Li@gdscn.ey.com>",
   "license": "MIT",
   "devDependencies": {
-    "vitepress": "^1.0.0-rc.10"
+    "@types/fs-extra": "^11.0.1",
+    "fast-glob": "^3.2.12",
+    "fs-extra": "^11.1.1",
+    "gitlog": "^4.0.4",
+    "gray-matter": "^4.0.3",
+    "sass": "^1.62.1",
+    "vitepress": "^1.0.0-alpha.75",
+    "vue": "^3.2.47"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
@@ -14,7 +21,10 @@
     "docs:serve": "vitepress serve docs"
   },
   "dependencies": {
-    "vite-plugin-vitepress-auto-sidebar": "^1.6.0",
+    "dayjs": "^1.11.7",
+    "markdown-it-container": "^3.0.0",
+    "oh-vue-icons": "^1.0.0-rc3",
+    "vite-plugin-vitepress-auto-sidebar": "^1.5.0",
     "vitepress-auto-nav-sidebar": "^0.0.5"
   }
 }
