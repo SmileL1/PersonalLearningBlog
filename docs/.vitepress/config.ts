@@ -4,7 +4,7 @@ import { titlePlugin } from './config/markdownPlugin'
 import { pageList } from './config/pageList'
 
 const { nav } = AutoNavPlugin({
-  ignoreFolders: ["node_modules", "assets", "public", ".vitepress", "code", ".obsidian", "utils"], // 需要排除的一些目录
+  ignoreFolders: ["node_modules", "assets", "public", ".vitepress", "code", ".obsidian", "utils", "components"], // 需要排除的一些目录
   ignoreFiles: ['index.md'], // 需要排除的一些文件
   dirPrefix: '',
   filePrefix: '',
