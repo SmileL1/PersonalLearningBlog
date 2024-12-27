@@ -21,9 +21,10 @@ NLog 是一个灵活且功能强大的 .NET 日志框架，适用于多种应用
 ### 安装
 可以通过 NuGet 安装 NLog
 
-### 配置
 
-#### 基础
+
+
+### 基础信息
 
 日志等级:
 - Trace
@@ -51,7 +52,8 @@ NLog 是一个灵活且功能强大的 .NET 日志框架，适用于多种应用
 严重错误，通常表示程序无法继续运行。
 场景：系统崩溃、数据丢失等。
 
-***
+### 配置
+
 在项目根目录中添加 NLog.config 文件，示例如下：
 ```xml
  <?xml version="1.0" encoding="utf-8" ?>
@@ -101,9 +103,9 @@ class Program
     }
 }
 ```
-#### 高级
+### 高级配置
 
-1.在配置文件中启用异步日志以提升性能：
+#### 1.在配置文件中启用异步日志以提升性能：
 
 ```xml
 <target name="asyncFile" xsi:type="AsyncWrapper">
@@ -115,7 +117,7 @@ class Program
 ```xml
 <logger name="*" minlevel="Info" writeTo="asyncFile" />
 ```
-2.可以将日志存储到数据库中：
+#### 2.可以将日志存储到数据库中：
 
 ```xml
 <target name="database" xsi:type="Database"
@@ -127,8 +129,8 @@ class Program
   <parameter name="@message" layout="${message}" />
 </target>
 ```
-***
-3.常用的日志布局参数
+
+#### 3.常用的日志布局参数
 
 NLog 提供了一系列丰富的布局渲染器（Layout Renderers），可以用来格式化日志内容。以下是一些常用的布局参数：
 
@@ -136,24 +138,29 @@ NLog 提供了一系列丰富的布局渲染器（Layout Renderers），可以�
 - ${longdate}：完整日期和时间，格式为 yyyy-MM-dd HH:mm:ss.ffff.
 - ${shortdate}：仅日期，格式为 yyyy-MM-dd.
 - ${date}：自定义格式的日期时间，例如 ${date:format=HH:mm:ss}.
+
 **日志级别相关**
 - ${level}：日志级别，如 Trace、Debug、Info 等.
 - ${uppercase:${level}}：日志级别大写形式.
+  
 **日志来源相关**
 - ${logger}：记录日志的类或名称.
 - ${callsite}：记录日志的代码位置，包括类和方法名.
 - ${callsite-filename}：记录日志的代码文件名.
 - ${callsite-linenumber}：记录日志的行号.
+  
 **消息和异常相关**
 - ${message}：日志消息.
 - ${exception}：捕获的异常信息，默认格式为 Message.
 - ${exception:format=ToString}：完整异常堆栈信息.
 - ${exception:format=Message,StackTrace}：只包含异常消息和堆栈信息.
+  
 **上下文相关**
 - ${aspnet-traceidentifier}：ASP.NET Core 中的请求唯一标识符.
 - ${scopeproperty:PropertyName}：从 Scope 中获取指定属性值.
 - ${mdlc:PropertyName}：从上下文中获取指定键值（Mapped Diagnostics Logical Context）.
 - ${ndlc}：当前上下文中所有嵌套诊断上下文信息.
+  
 **性能和系统相关**
 - ${threadid}：线程 ID.
 - ${processid}：当前进程的 ID.
